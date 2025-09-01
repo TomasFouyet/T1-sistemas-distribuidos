@@ -1,0 +1,50 @@
+{
+    "initial_database": [
+        {"usuario": "Hernán V", "anime": "Lycoris Recoil", "puntaje": 10},
+        {"usuario": "Hernán V", "anime": "Gintama", "puntaje": 9},
+        {"usuario": "Sakura", "anime": "Gintama", "puntaje": 9},
+        {"usuario": "Makoto", "anime": "Gintama", "puntaje": 7},
+        {"usuario": "Sakura", "anime": "Lycoris Recoil", "puntaje": 6}
+    ],
+    "queries": [
+        {
+            "consulta": ["obtener", "Sakura", "Gintama"],
+            "esperado": 9
+        },
+        {
+            "consulta": ["obtener", "Makoto", "Gintama"],
+            "esperado": 7
+        },
+        {
+            "consulta": ["obtener", "Sakura", "Lycoris Recoil"],
+            "esperado": 6
+        },
+        {
+            "consulta": ["puntaje_promedio", "Gintama"],
+            "esperado": 8.33
+        },
+        {
+            "consulta": ["puntaje_promedio", "Lycoris Recoil"],
+            "esperado": 8.0
+        },
+        {
+            "consulta": ["puntaje_promedio", "One Piece"],
+            "esperado": -1
+        },
+        {
+            "consulta": ["obtener", "Conan", "Gintama"],
+            "esperado": -1
+        },
+        {
+            "consulta": ["animes"],
+            "esperado": {"Lycoris Recoil": 2, "Gintama": 3}
+        }
+    ],
+    "final_database": [
+        {"usuario": "Hernán V", "anime": "Lycoris Recoil", "puntaje": 10},
+        {"usuario": "Hernán V", "anime": "Gintama", "puntaje": 9},
+        {"usuario": "Sakura", "anime": "Gintama", "puntaje": 9},
+        {"usuario": "Makoto", "anime": "Gintama", "puntaje": 7},
+        {"usuario": "Sakura", "anime": "Lycoris Recoil", "puntaje": 6}
+    ]
+}

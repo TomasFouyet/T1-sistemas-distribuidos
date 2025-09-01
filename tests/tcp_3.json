@@ -1,0 +1,15 @@
+{
+    "initial_database": [],
+    "consultas": [
+        ["A", {"tipo": "SCORE", "usuario": "Aqua", "anime": "Your Name", "puntaje": 5}],
+        ["B", {"tipo": "STOP"}],
+        ["B", {"tipo": "SCORE", "usuario": "Miku", "anime": "Your Name", "puntaje": 7}],
+        ["A", {"tipo": "SCORE", "usuario": "Miku", "anime": "Lycoris Recoil", "puntaje": 10}],
+        ["C", {"tipo": "CONSOLIDAR"}]
+    ],
+    "title": "Ejemplo 3 - Información enviada a nodo caído no se considera",
+    "final_database": [
+        {"usuario": "Aqua", "anime": "Your Name", "puntaje": 5},
+        {"usuario": "Miku", "anime": "Lycoris Recoil", "puntaje": 10}
+    ]
+}

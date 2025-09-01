@@ -1,0 +1,14 @@
+{
+    "initial_database": [],
+    "consultas": [
+        ["A", {"tipo": "SCORE", "usuario": "Sakura", "anime": "Detective Conan", "puntaje": 7}],
+        ["B", {"tipo": "SCORE", "usuario": "Keni", "anime": "One Piece", "puntaje": 10}],
+        ["C", {"tipo": "SCORE", "usuario": "Sakura", "anime": "Detective Conan", "puntaje": 9}],
+        ["B", {"tipo": "CONSOLIDAR"}]
+    ],
+    "title": "Ejemplo 1 - Rating se sobrescribe",
+    "final_database": [
+        {"usuario": "Sakura", "anime": "Detective Conan", "puntaje": 9},
+        {"usuario": "Keni", "anime": "One Piece", "puntaje": 10}
+    ]
+}

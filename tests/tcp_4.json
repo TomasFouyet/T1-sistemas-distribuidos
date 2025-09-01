@@ -1,0 +1,19 @@
+{
+    "initial_database": [],
+    "consultas": [
+        ["A", {"tipo": "STOP"}],
+        ["B", {"tipo": "STOP"}],
+        ["C", {"tipo": "SCORE", "usuario": "Sakura", "anime": "Detective Conan", "puntaje": 7}],
+        ["A", {"tipo": "START"}],
+        ["B", {"tipo": "START"}],
+        ["C", {"tipo": "STOP"}],
+        ["A", {"tipo": "SCORE", "usuario": "Keni", "anime": "One Piece", "puntaje": 5}],
+        ["B", {"tipo": "SCORE", "usuario": "Ruby", "anime": "Gintama", "puntaje": 9}],
+        ["B", {"tipo": "CONSOLIDAR"}]
+    ],
+    "title": "Ejemplo 4 - Se pierde información por nodos apagados",
+    "final_database": [
+        {"usuario": "Keni", "anime": "One Piece", "puntaje": 5},
+        {"usuario": "Ruby", "anime": "Gintama", "puntaje": 9}
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "initial_database": [],
+    "consultas": [
+        ["C", {"tipo": "STOP"}],
+        ["B", {"tipo": "SCORE", "usuario": "Sakura", "anime": "Detective Conan", "puntaje": 6}],
+        ["B", {"tipo": "SCORE", "usuario": "Keni", "anime": "One Piece", "puntaje": 8}],
+        ["B", {"tipo": "SCORE", "usuario": "Ruby", "anime": "Gintama", "puntaje": 7}],
+        ["C", {"tipo": "START"}],
+        ["C", {"tipo": "SCORE", "usuario": "Ruby", "anime": "Gintama", "puntaje": 9}],
+        ["A", {"tipo": "CONSOLIDAR"}]
+    ],
+    "title": "Ejemplo 2 - Rating se sobreescribe por nodo que tiene menor reloj lógico",
+    "final_database": [
+        {"usuario": "Sakura", "anime": "Detective Conan", "puntaje": 6},
+        {"usuario": "Keni", "anime": "One Piece", "puntaje": 8},
+        {"usuario": "Ruby", "anime": "Gintama", "puntaje": 9}
+    ]
+}

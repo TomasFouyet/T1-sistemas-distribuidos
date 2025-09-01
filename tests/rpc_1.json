@@ -1,0 +1,62 @@
+{
+    "initial_database": [],
+    "queries": [
+        {
+            "consulta": ["calificar", "Sakura", "Naruto", 8],
+            "esperado": 8
+        },
+        {
+            "consulta": ["obtener", "Sakura", "Naruto"],
+            "esperado": 8
+        },
+        {
+            "consulta": ["calificar", "Sakura", "Naruto", 9],
+            "esperado": 9
+        },
+        {
+            "consulta": ["obtener", "Sakura", "Naruto"],
+            "esperado": 9
+        },
+        {
+            "consulta": ["calificar", "Makoto", "Naruto", 7],
+            "esperado": 7
+        },
+        {
+            "consulta": ["obtener", "Makoto", "Naruto"],
+            "esperado": 7
+        },
+        {
+            "consulta": ["calificar", "Sakura", "Bleach", 6],
+            "esperado": 6
+        },
+        {
+            "consulta": ["obtener", "Sakura", "Bleach"],
+            "esperado": 6
+        },
+        {
+            "consulta": ["puntaje_promedio", "Naruto"],
+            "esperado": 8.0
+        },
+        {
+            "consulta": ["puntaje_promedio", "Bleach"],
+            "esperado": 6.0
+        },
+        {
+            "consulta": ["puntaje_promedio", "One Piece"],
+            "esperado": -1
+        },
+        {
+            "consulta": ["obtener", "Conan", "Naruto"],
+            "esperado": -1
+        },
+        {
+            "consulta": ["animes"],
+            "esperado": {"Naruto": 2, "Bleach": 1}
+        }
+    ],
+    "final_database": [
+        {"usuario": "Sakura", "anime": "Naruto", "puntaje": 9},
+        {"usuario": "Makoto", "anime": "Naruto", "puntaje": 7},
+        {"usuario": "Sakura", "anime": "Bleach", "puntaje": 6}
+    ]
+}
