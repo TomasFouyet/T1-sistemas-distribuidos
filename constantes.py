@@ -16,3 +16,6 @@ TIEMPO_ENTRE_MENSAJES = 0.2
 # Para la corrección final será de 5 segundos como tope máximo.
 # Pero aquí se dejó más bajo para facilitar los tests públicos.
 TIEMPO_CONSOLIDAR = 0.2
+
+
+DB_FILE = "base_de_datos.json"
